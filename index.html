@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TECHNIGRAF Betriebssystem — Download</title>
+<style>
+  :root {
+    --blau: #164194;
+    --blau-dunkel: #0f2e60;
+    --blau-hell: #e8edf8;
+    --tinte: #101728;
+    --tinte-2: #46536b;
+    --tinte-3: #7c889e;
+    --linie: #d5dae4;
+    --flaeche: #fff;
+    --papier: #f4f6fa;
+    --gruen: #1f7a4d;
+    --gelb-flaeche: #fdf3dd;
+    --gelb-rand: #e8d9a8;
+    --gelb-tinte: #6b4c04;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --blau: #7ea3ee; --blau-dunkel: #a5c0f7; --blau-hell: #1a2440;
+      --tinte: #e8ecf5; --tinte-2: #a3adc4; --tinte-3: #737e97;
+      --linie: #2a3450; --flaeche: #131a2b; --papier: #0a0e19;
+      --gruen: #5cc78e; --gelb-flaeche: #2e2110; --gelb-rand: #4a3a1a; --gelb-tinte: #e0b45a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--papier);
+    color: var(--tinte);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+  }
+  .blatt { max-width: 760px; margin: 0 auto; padding: 0 22px 80px; }
+  header { padding: 56px 0 34px; border-bottom: 3px solid var(--blau); }
+  .marke { display: flex; align-items: center; gap: 14px; }
+  .signet { width: 52px; height: 52px; flex: none; }
+  .marke b { font-size: 24px; letter-spacing: .06em; color: var(--blau); }
+  h1 { font-size: clamp(28px, 5vw, 40px); margin: 26px 0 0; letter-spacing: -.02em; }
+  .lead { color: var(--tinte-2); margin-top: 12px; font-size: 17px; max-width: 56ch; }
+
+  .knoepfe { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 34px 0 0; }
+  @media (max-width: 620px) { .knoepfe { grid-template-columns: 1fr; } }
+  .knopf {
+    display: block;
+    background: var(--flaeche);
+    border: 1px solid var(--linie);
+    border-radius: 10px;
+    padding: 22px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color .15s, box-shadow .15s, transform .1s;
+  }
+  .knopf:hover { border-color: var(--blau); box-shadow: 0 8px 24px rgba(20,40,90,.12); }
+  .knopf:active { transform: scale(.99); }
+  .knopf .system { font-size: 13px; text-transform: uppercase; letter-spacing: .1em; color: var(--tinte-3); }
+  .knopf .titel { font-size: 20px; font-weight: 700; margin: 5px 0 3px; color: var(--blau); }
+  .knopf .datei { font-size: 13px; color: var(--tinte-3); font-variant-numeric: tabular-nums; }
+  .knopf--haupt { border-color: var(--blau); background: var(--blau-hell); }
+
+  section { margin-top: 46px; }
+  h2 { font-size: 21px; margin: 0 0 12px; }
+  p { margin: 0 0 14px; color: var(--tinte-2); }
+  ol, ul { color: var(--tinte-2); padding-left: 22px; margin: 0 0 14px; }
+  li { margin-bottom: 7px; }
+  code {
+    background: var(--blau-hell);
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: var(--blau-dunkel);
+  }
+  .hinweis {
+    background: var(--gelb-flaeche);
+    border: 1px solid var(--gelb-rand);
+    border-left-width: 4px;
+    border-radius: 0 8px 8px 0;
+    padding: 15px 18px;
+    color: var(--gelb-tinte);
+    font-size: 15px;
+  }
+  .hinweis b { color: inherit; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; margin-top: 8px; }
+  td { padding: 8px 0; border-bottom: 1px solid var(--linie); color: var(--tinte-2); vertical-align: top; }
+  td:first-child { font-weight: 600; color: var(--tinte); width: 42%; }
+  footer {
+    margin-top: 54px; padding-top: 20px; border-top: 1px solid var(--linie);
+    font-size: 13px; color: var(--tinte-3);
+  }
+</style>
+</head>
+<body>
+<div class="blatt">
+
+  <header>
+    <div class="marke">
+      <svg class="signet" viewBox="0 0 100 100" aria-hidden="true">
+        <rect width="100" height="100" fill="#fff"/>
+        <g fill="#164194">
+          <!-- Streifenraster des Signets -->
+          <rect y="2" width="100" height="3"/><rect y="9" width="100" height="3"/>
+          <rect y="16" width="100" height="3"/><rect y="23" width="100" height="3"/>
+          <rect y="30" width="100" height="3"/><rect y="37" width="100" height="3"/>
+          <rect y="44" width="100" height="3"/><rect y="51" width="100" height="3"/>
+          <rect y="58" width="100" height="3"/><rect y="65" width="100" height="3"/>
+          <rect y="72" width="100" height="3"/><rect y="79" width="100" height="3"/>
+          <rect y="86" width="100" height="3"/><rect y="93" width="100" height="3"/>
+          <rect x="20" y="19" width="60" height="59"/>
+        </g>
+        <polygon points="4,78 39.5,78 39.5,23.5" fill="#fff"/>
+        <polygon points="96,78 60.5,78 60.5,23.5" fill="#fff"/>
+      </svg>
+      <b>TECHNIGRAF</b>
+    </div>
+
+    <h1>Betriebssystem</h1>
+    <p class="lead">
+      Ersatzteilauskunft, Lager, Inventur mit Handscanner, Fertigung, Einkauf und Belege —
+      für Windows und Mac. Beide Fassungen sind identisch und arbeiten auf denselben Daten.
+    </p>
+
+    <div class="knoepfe">
+      <a class="knopf knopf--haupt" href="https://github.com/chrismhn/technigraf-app/releases/download/v0.1.0/TECHNIGRAF-Betriebssystem-Setup-0.1.0.exe">
+        <div class="system">Windows 10 / 11</div>
+        <div class="titel">Für Windows laden</div>
+        <div class="datei">Installer · 92 MB</div>
+      </a>
+      <a class="knopf" href="https://github.com/chrismhn/technigraf-app/releases/download/v0.1.0/TECHNIGRAF-Betriebssystem-0.1.0.dmg">
+        <div class="system">macOS · Intel</div>
+        <div class="titel">Für Mac laden</div>
+        <div class="datei">Disk-Image · 110 MB</div>
+      </a>
+    </div>
+    <p style="margin-top:14px;font-size:14px">
+      Mac mit Apple-Chip (M1 – M4): <a href="https://github.com/chrismhn/technigraf-app/releases/download/v0.1.0/TECHNIGRAF-Betriebssystem-0.1.0-arm64.dmg">arm64-Fassung laden</a>
+    </p>
+  </header>
+
+  <section>
+    <div class="hinweis">
+      <b>Beim ersten Start meldet sich Windows.</b> Die Anwendung ist noch nicht
+      signiert, deshalb erscheint „Der Computer wurde durch Windows geschützt“.
+      Auf <b>Weitere Informationen</b> und dann <b>Trotzdem ausführen</b> klicken.
+      Auf dem Mac einmal mit der rechten Maustaste auf das Programm und <b>Öffnen</b> wählen.
+      Das verschwindet, sobald ein Signaturzertifikat eingerichtet ist.
+    </div>
+  </section>
+
+  <section>
+    <h2>Was drin ist</h2>
+    <table>
+      <tr><td>Produktkatalog</td><td>33 Produkte mit Bildern, technischen Daten und Produktblättern (DE/EN)</td></tr>
+      <tr><td>Artikel &amp; Ersatzteile</td><td>221 Artikelnummern — Nummer eingeben, Gerät und passende Teile erscheinen</td></tr>
+      <tr><td>Handscanner</td><td>Scannen funktioniert überall in der Anwendung, ohne Treiber und ohne Extra-Fenster</td></tr>
+      <tr><td>Lager in Gruppen</td><td>Geräte, Strahler &amp; Lampen, Verpackung, Kleinteile, Ersatzteile</td></tr>
+      <tr><td>Anmeldung</td><td>sieben Bereiche — Produktion sieht keine Preise, Geschäftsführung sieht alles</td></tr>
+      <tr><td>Gemeinsame Daten</td><td>Buchungen erscheinen auf allen Geräten; ohne Netz werden sie vorgemerkt</td></tr>
+      <tr><td>Aktualisierung</td><td>läuft von selbst — kein Administrator nötig</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Zum Ausprobieren</h2>
+    <ol>
+      <li>Installieren und starten.</li>
+      <li>Bei der Anmeldung eine Rolle wählen — <b>Demo-Zugang</b> zeigt alles.</li>
+      <li>Oben eine Artikelnummer suchen, zum Beispiel <code>UN50201</code>.</li>
+      <li>Auf <b>Lagerbestand</b> gehen und mit dem Handscanner ein Etikett scannen —
+          ohne Scanner tut es auch <b>Inventur &amp; Scan</b> → <b>Scan simulieren</b>.</li>
+    </ol>
+    <p>
+      Die Produktdaten stammen von technigraf.de und sind echt. Bestände, Preise, Kunden
+      und Aufträge sind Demowerte, bis die Daten aus ALPHAPLAN angeschlossen sind — in der
+      Anwendung sind Demowerte gestrichelt umrandet.
+    </p>
+  </section>
+
+  <footer>
+    TECHNIGRAF GmbH · Auf der Struth 4 · 61279 Grävenwiesbach-Hundstadt<br>
+    Version 0.1.0 · interne Vorabfassung
+  </footer>
+
+</div>
+</body>
+</html>
